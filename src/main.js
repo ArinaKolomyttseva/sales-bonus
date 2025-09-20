@@ -13,7 +13,7 @@ function calculateBonusByProfit(index, total, seller) {
 function analyzeSalesData(data, options) {
   // Проверка входных данных
   if (
-    typeof data == 'object' ||
+    !typeof data == 'object' ||
     !Array.isArray(data.sellers) ||
     !data.sellers.length ||
     !Array.isArray(data.products) ||
