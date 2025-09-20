@@ -12,7 +12,7 @@ function calculateBonusByProfit(index, total, seller) {
 
 function analyzeSalesData(data, options) {
     // Проверка входных данных
-    if (!data || !Array.isArray(data.sellers) || !Array.isArray(data.products) || !Array.isArray(data.purchase_records)) {
+    if (!data || !Array.isArray(data.sellers) || !data.sellers || !data.products || !data.purchase_records || !Array.isArray(data.products) || !Array.isArray(data.purchase_records)) {
         throw new Error("Некорректные входные данные");
     }
 
